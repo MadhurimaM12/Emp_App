@@ -4,14 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/",   // ✅ Important for Vercel deployment
-
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
-
-  // ⚠️ Optional: keep proxy ONLY for local development
+  plugins: [react(),tailwindcss()],
   server: {
     proxy: {
       '/api': {
